@@ -20,7 +20,6 @@ call plug#begin()
       Plug 'roxma/vim-hug-neovim-rpc'
     endif
     let g:deoplete#enable_at_startup = 1
-    Plug 'ap/vim-css-color'
     Plug 'preservim/nerdtree'
     Plug 'mhinz/vim-startify'
     Plug 'sainnhe/everforest'
