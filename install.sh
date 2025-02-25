@@ -68,16 +68,15 @@ git clone --depth 1 "$REPO_URL" "$TEMP_DIR"
 mkdir -p "$VIM_DIR"
 
 msg "📦 Installing Vim configuration..."
-mv "$TEMP_DIR/thatsit/.vimrc" "$VIMRC"
-mv "$TEMP_DIR/thatsit/"* "$VIM_DIR/"
+cp "$TEMP_DIR/thatsit/.vimrc" "$VIMRC"
+cp -r "$TEMP_DIR/thatsit/"* "$VIM_DIR/"
 
 # Cleanup
 rm -rf "$TEMP_DIR"
-vim +PlugInstall +qall
+vim +'PlugInstall --sync' +qa
 
 msg "🎉 Installation complete, enjoy!"
 
-logo
 
 if [ ${#MISSING_OPTIONALS[@]} -gt 0 ]; then
   msg "⚠️  Optional dependencies missing:"
@@ -101,4 +100,5 @@ logo() {
 EOF
 }
 
+logo
 

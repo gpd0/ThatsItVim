@@ -11,7 +11,9 @@ source ~/.vim/plugins.vim
 source ~/.vim/patch.vim
 source ~/.vim/nerdtree.vim
 source ~/.vim/fzf.vim
-source ~/.vim/startify.vim
+if filereadable(expand("~/.vim/plugged/vim-startify/plugin/startify.vim"))
+  source ~/.vim/startify.vim
+endif
 " ---
 
 set number
@@ -47,7 +49,10 @@ endif
 
 syntax enable
 set background=dark
-colorscheme everforest
+
+if filereadable(expand("~/.vim/plugged/everforest/colors/everforest.vim"))
+  colorscheme everforest
+endif
 
 " Coc ---
 nnoremap gd <Plug>(coc-definition)
