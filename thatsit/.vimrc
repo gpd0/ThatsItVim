@@ -8,7 +8,9 @@ endif
 
 " LOAD PLUGINS ---
 source ~/.vim/plugins.vim
-source ~/.vim/patch.vim
+if exists('$KITTY_WINDOW_ID') || exists('$ALACRITTY_SOCKET')
+  source ~/.vim/patch.vim
+endif
 source ~/.vim/nerdtree.vim
 source ~/.vim/fzf.vim
 if filereadable(expand("~/.vim/plugged/vim-startify/plugin/startify.vim"))
