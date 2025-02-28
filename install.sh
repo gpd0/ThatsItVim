@@ -73,7 +73,7 @@ cp -r "$TEMP_DIR/thatsit/"* "$VIM_DIR/"
 
 # Cleanup
 rm -rf "$TEMP_DIR"
-vim +'PlugInstall --sync' +qa
+vim -e +'PlugInstall --sync' +qa
 
 msg "🎉 Installation complete, enjoy!"
 
@@ -85,7 +85,7 @@ if [ ${#MISSING_OPTIONALS[@]} -gt 0 ]; then
   done
 fi
 
-logo() {
+end() {
   cat <<'EOF'
 
  /$$$$$$$$ /$$                   /$$   /$$              /$$$$$$ /$$           /$$    /$$ /$$$$$$ /$$      /$$
@@ -100,5 +100,6 @@ logo() {
 EOF
 }
 
-logo
+end
+
 
