@@ -16,6 +16,7 @@ source ~/.vim/fzf.vim
 if filereadable(expand("~/.vim/plugged/vim-startify/plugin/startify.vim"))
   source ~/.vim/startify.vim
 endif
+source ~/.vim/coc.vim
 " ---
 
 set number
@@ -55,13 +56,6 @@ set background=dark
 if filereadable(expand("~/.vim/plugged/everforest/colors/everforest.vim"))
   colorscheme everforest
 endif
-
-" Coc ---
-nnoremap gd <Plug>(coc-definition)
-nnoremap gr <Plug>(coc-references)
-nnoremap K :call CocActionAsync('doHover')<CR>
-autocmd CursorHold * silent call CocActionAsync('highlight')
-" ---
 
 let g:airline_powerline_fonts = 1
 let g:webdevicons_enable_airline = 0
