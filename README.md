@@ -10,7 +10,8 @@ An extremely lightweight set of configs and plugins, for a pleasant experience w
 </h2>
 
 ![Image Preview](https://i.imgur.com/ArByBMT.png)
----
+![Fzf Showcase](https://i.imgur.com/e9f7TPM.png)
+
 ## 🗒️ Requirements  
 
 To use **That's It Vim**, ensure you have the following installed:  
@@ -29,7 +30,7 @@ To use **That's It Vim**, ensure you have the following installed:
 ### 🔸 Optional
 - **[fd](https://github.com/sharkdp/fd)** - better fzf utilities integration, open folders, files etc.
 - **[bat](https://github.com/sharkdp/bat)** - syntax highlight while using fzf
----
+
 
 ## 🛠️ Installation
 
@@ -50,7 +51,8 @@ curl -s https://raw.githubusercontent.com/aksodoaksd/ThatsItVim/refs/heads/main/
 **Then Start Vim**
 `vim`
 ### Enjoy!
----
+
+
 ## 🌟 Plugins & Credits  
 
 Here are the plugins used in **That's It VIM**, along with credits to their authors:  
