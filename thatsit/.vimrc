@@ -13,10 +13,10 @@ if exists('$KITTY_WINDOW_ID') || exists('$ALACRITTY_SOCKET')
 endif
 source ~/.vim/nerdtree.vim
 source ~/.vim/fzf.vim
+source ~/.vim/coc.vim
 if filereadable(expand("~/.vim/plugged/vim-startify/plugin/startify.vim"))
   source ~/.vim/startify.vim
 endif
-source ~/.vim/coc.vim
 " ---
 
 set number
@@ -43,6 +43,7 @@ set hlsearch
 set incsearch
 
 set scrolloff=8
+set updatetime=300
 
 filetype plugin indent on
 
